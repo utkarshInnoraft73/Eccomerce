@@ -1,0 +1,36 @@
+uuid: f0415ec4-e05e-4993-9d06-fa372097a1ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.se
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_secondarymenus
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'system_menu_block:se'
+settings:
+  id: 'system_menu_block:se'
+  label: 'Secondary Menus'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      content_admin_1: content_admin_1
+      content_admin_2: content_admin_2
+      content_admin_3: content_admin_3

@@ -1,0 +1,36 @@
+uuid: a0336d3e-2b4e-4372-98d7-adde669423e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.content_admin_3_product.body
+    - field.field.node.content_admin_3_product.field_cateogary_admin_3
+    - field.field.node.content_admin_3_product.field_price_admin_3
+    - field.field.node.content_admin_3_product.field_product_image_admin_3
+    - node.type.content_admin_3_product
+  module:
+    - text
+    - user
+id: node.content_admin_3_product.teaser
+targetEntityType: node
+bundle: content_admin_3_product
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cateogary_admin_3: true
+  field_price_admin_3: true
+  field_product_image_admin_3: true

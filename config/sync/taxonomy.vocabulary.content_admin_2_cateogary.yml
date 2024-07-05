@@ -1,0 +1,9 @@
+uuid: cff8c20e-6e57-45ef-8363-300626927856
+langcode: en
+status: true
+dependencies: {  }
+name: 'Content admin 2 cateogary'
+vid: content_admin_2_cateogary
+description: null
+weight: 0
+new_revision: false

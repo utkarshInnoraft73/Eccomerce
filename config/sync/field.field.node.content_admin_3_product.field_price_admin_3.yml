@@ -1,0 +1,23 @@
+uuid: dfd97d93-0e6a-4b74-8a49-ecad1858a211
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_admin_3
+    - node.type.content_admin_3_product
+id: node.content_admin_3_product.field_price_admin_3
+field_name: field_price_admin_3
+entity_type: node
+bundle: content_admin_3_product
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10.0
+  max: null
+  prefix: ₹
+  suffix: ''
+field_type: decimal

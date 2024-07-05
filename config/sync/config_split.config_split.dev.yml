@@ -1,0 +1,17 @@
+uuid: c2eb9ee1-5ec7-4803-b814-d194998c5c61
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+weight: 0
+folder: ../config/split/dev
+module:
+  webform_ui: 0
+theme: {  }
+blacklist:
+  - webform.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
