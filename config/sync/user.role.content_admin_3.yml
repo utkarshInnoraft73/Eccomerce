@@ -1,9 +1,15 @@
 uuid: 49b214c0-b083-4de2-9361-b9c5a5bf58b0
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.content_admin_3_product
+  module:
+    - node
 id: content_admin_3
 label: 'Content admin 3'
 weight: 6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create content_admin_3_product content'
+  - 'edit own content_admin_3_product content'

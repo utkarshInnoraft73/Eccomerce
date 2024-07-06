@@ -1,0 +1,40 @@
+uuid: 1728a0e3-c919-4ade-9b2b-f6a4681a9895
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banne.field_image
+    - field.field.paragraph.banne.field_open
+    - paragraphs.paragraphs_type.banne
+  module:
+    - image
+    - link
+id: paragraph.banne.default
+targetEntityType: paragraph
+bundle: banne
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_open:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

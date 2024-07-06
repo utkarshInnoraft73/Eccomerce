@@ -1,0 +1,34 @@
+uuid: 6adb4cc6-7241-4c91-8c39-9f3dbf69c3f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin-2-menu
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_admin2menu
+theme: olivero
+region: highlighted
+weight: 0
+provider: null
+plugin: 'system_menu_block:admin-2-menu'
+settings:
+  id: 'system_menu_block:admin-2-menu'
+  label: 'Admin 2 Menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      content_admin_2: content_admin_2

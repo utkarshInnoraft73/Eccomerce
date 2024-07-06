@@ -1,0 +1,23 @@
+uuid: 7f19f5bd-df74-4ffd-99a9-7d968414651b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_open
+    - paragraphs.paragraphs_type.banne
+  module:
+    - link
+id: paragraph.banne.field_open
+field_name: field_open
+entity_type: paragraph
+bundle: banne
+label: 'Page Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
