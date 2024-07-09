@@ -1,0 +1,29 @@
+uuid: fbc02ca6-eb20-4a13-83ae-8e4f8f5a5019
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_furnitures_specific_items
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__home_furnitures_specific_items_block_1
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:home_furnitures_specific_items-block_1'
+settings:
+  id: 'views_block:home_furnitures_specific_items-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

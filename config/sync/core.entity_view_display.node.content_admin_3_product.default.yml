@@ -1,0 +1,62 @@
+uuid: 9ae385b6-9fb4-4b2d-9305-e8037a1baedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.content_admin_3_product.body
+    - field.field.node.content_admin_3_product.field_cateogary_admin_3
+    - field.field.node.content_admin_3_product.field_price_admin_3
+    - field.field.node.content_admin_3_product.field_product_image_admin_3
+    - node.type.content_admin_3_product
+  module:
+    - image
+    - text
+    - user
+id: node.content_admin_3_product.default
+targetEntityType: node
+bundle: content_admin_3_product
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_cateogary_admin_3:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_price_admin_3:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_product_image_admin_3:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

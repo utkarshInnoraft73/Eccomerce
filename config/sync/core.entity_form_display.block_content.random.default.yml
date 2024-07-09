@@ -1,0 +1,44 @@
+uuid: d9514a54-7927-4c68-8e9d-820f3983993b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.random
+    - field.field.block_content.random.body
+    - field.field.block_content.random.field_random
+  module:
+    - text
+id: block_content.random.default
+targetEntityType: block_content
+bundle: random
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_random:
+    type: entity_reference_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 587a3541-8cf9-4dad-a73f-81711f752607
+langcode: en
+status: true
+dependencies: {  }
+name: 'Content admin 1 cateogary'
+vid: content_admin_1_cateogary
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,26 @@
+uuid: d8947dc6-d03f-4f6f-a0b7-f8d8b016314b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: appl
+label: Appliances
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      products: products
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

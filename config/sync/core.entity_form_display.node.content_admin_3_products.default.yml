@@ -1,0 +1,103 @@
+uuid: e3cd893e-4e64-4dff-bb49-7d73b638fb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.content_admin_3_products.body
+    - field.field.node.content_admin_3_products.field_cateogary_admin_2
+    - field.field.node.content_admin_3_products.field_price_admin_2
+    - field.field.node.content_admin_3_products.field_product_admin_2_image
+    - image.style.thumbnail
+    - node.type.content_admin_3_products
+  module:
+    - image
+    - path
+    - text
+id: node.content_admin_3_products.default
+targetEntityType: node
+bundle: content_admin_3_products
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cateogary_admin_2:
+    type: options_buttons
+    weight: 124
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_price_admin_2:
+    type: number
+    weight: 123
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_product_admin_2_image:
+    type: image_image
+    weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

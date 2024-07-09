@@ -1,0 +1,29 @@
+uuid: 1ee2e55a-1339-42b1-93a8-07618861ce00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cateogary_admin_3
+    - node.type.content_admin_3_product
+    - taxonomy.vocabulary.content_admin_3_cateogary
+id: node.content_admin_3_product.field_cateogary_admin_3
+field_name: field_cateogary_admin_3
+entity_type: node
+bundle: content_admin_3_product
+label: Cateogary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      content_admin_3_cateogary: content_admin_3_cateogary
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

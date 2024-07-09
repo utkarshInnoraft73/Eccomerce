@@ -1,0 +1,26 @@
+uuid: 3e145a2b-f720-4fe6-be17-fd0cd4323079
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: electrronics
+label: Electrronics
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      products: products
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,42 @@
+uuid: 055bbae0-4c97-4cfd-ba1c-f71a7155389d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.maximum_content_created
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__maximum_content_created_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:maximum_content_created-block_1'
+settings:
+  id: 'views_block:maximum_content_created-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+      content_admin_1: content_admin_1
+      content_admin_2: content_admin_2
+      content_admin_3: content_admin_3

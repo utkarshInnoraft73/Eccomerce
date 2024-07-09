@@ -1,0 +1,20 @@
+uuid: bab594d1-2041-41fe-8b55-c68c18ab20a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - entityqueue
+id: block_content.field_random
+field_name: field_random
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: entity_subqueue
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

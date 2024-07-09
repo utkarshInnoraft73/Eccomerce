@@ -1,0 +1,29 @@
+uuid: a7748ab3-a1eb-4cf8-870f-f14fab588ac8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.random
+    - entityqueue.entity_queue.appl
+    - field.storage.block_content.field_random
+id: block_content.random.field_random
+field_name: field_random
+entity_type: block_content
+bundle: random
+label: Random
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:entity_subqueue'
+  handler_settings:
+    target_bundles:
+      appl: appl
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: appl
+field_type: entity_reference

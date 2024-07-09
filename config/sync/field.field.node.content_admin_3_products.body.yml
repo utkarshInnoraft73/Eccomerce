@@ -1,0 +1,24 @@
+uuid: c6a65fe4-6a21-4093-969c-aec4d1d79a0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.content_admin_3_products
+  module:
+    - text
+id: node.content_admin_3_products.body
+field_name: body
+entity_type: node
+bundle: content_admin_3_products
+label: 'Product description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

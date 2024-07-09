@@ -1,0 +1,10 @@
+uuid: 9cd3bbc7-9931-426d-9830-10f67cc22748
+langcode: en
+status: true
+dependencies: {  }
+id: banne
+label: Banner
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

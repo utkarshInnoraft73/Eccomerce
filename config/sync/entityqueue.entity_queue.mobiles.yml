@@ -1,0 +1,26 @@
+uuid: 46ba2bf1-074f-40fd-8790-c66edef420ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: mobiles
+label: Mobiles
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      content_admin_3_products: content_admin_3_products
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

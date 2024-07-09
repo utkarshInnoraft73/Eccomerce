@@ -1,0 +1,36 @@
+uuid: fc6bb251-58fc-44d3-84a8-eeb5e2a72712
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banne.field_image
+    - field.field.paragraph.banne.field_open
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.banne
+  module:
+    - image
+    - link
+id: paragraph.banne.default
+targetEntityType: paragraph
+bundle: banne
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_open:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
