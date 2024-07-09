@@ -1,0 +1,29 @@
+uuid: f57df1d0-1973-4713-8733-2b4cc2a8e550
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.fashion_specific_items
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__fashion_specific_items_block_1
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:fashion_specific_items-block_1'
+settings:
+  id: 'views_block:fashion_specific_items-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

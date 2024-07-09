@@ -16,17 +16,28 @@ elements: |-
   first_name:
     '#type': textfield
     '#title': 'First Name'
+    '#required': true
   last_name:
     '#type': textfield
     '#title': 'Last Name'
   email:
     '#type': email
     '#title': Email
+    '#required': true
   phone_number:
     '#type': tel
     '#title': 'Phone number'
     '#international': true
     '#international_initial_country': IN
+    '#required': true
+  message:
+    '#type': textarea
+    '#title': Message
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Contact Us'
 css: ''
 javascript: ''
 settings:

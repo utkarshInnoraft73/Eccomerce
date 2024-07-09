@@ -1,0 +1,29 @@
+uuid: cd6b803b-d799-45af-9842-e4413cdb4ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.grocery_specific_items
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__grocery_specific_items_block_1
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:grocery_specific_items-block_1'
+settings:
+  id: 'views_block:grocery_specific_items-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

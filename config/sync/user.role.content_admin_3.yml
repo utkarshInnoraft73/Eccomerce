@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.two_wheelers
     - node.type.content_admin_3_product
   module:
+    - entityqueue
     - node
 id: content_admin_3
 label: 'Content admin 3'
@@ -13,3 +15,4 @@ is_admin: null
 permissions:
   - 'create content_admin_3_product content'
   - 'edit own content_admin_3_product content'
+  - 'update two_wheelers entityqueue'

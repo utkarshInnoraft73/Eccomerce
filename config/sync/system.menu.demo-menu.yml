@@ -1,0 +1,8 @@
+uuid: 6bacbf1e-34eb-4ab2-8718-34663cdafa0e
+langcode: en
+status: true
+dependencies: {  }
+id: demo-menu
+label: 'demo menu'
+description: ''
+locked: false

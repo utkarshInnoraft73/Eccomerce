@@ -1,0 +1,31 @@
+uuid: 28e97d73-b43a-4c4a-bc2e-f56a1e8c9475
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.random
+    - field.field.block_content.random.body
+    - field.field.block_content.random.field_random
+  module:
+    - text
+id: block_content.random.default
+targetEntityType: block_content
+bundle: random
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_random:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

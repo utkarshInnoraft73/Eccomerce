@@ -3,8 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.appl
+    - entityqueue.entity_queue.electrronics
+    - entityqueue.entity_queue.grocery
     - node.type.products
   module:
+    - entityqueue
     - node
 id: content_admin_1
 label: 'Content admin 1'
@@ -13,3 +17,6 @@ is_admin: null
 permissions:
   - 'create products content'
   - 'edit own products content'
+  - 'update appl entityqueue'
+  - 'update electrronics entityqueue'
+  - 'update grocery entityqueue'

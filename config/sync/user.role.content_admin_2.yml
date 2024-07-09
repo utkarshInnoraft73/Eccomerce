@@ -3,8 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.fashion
+    - entityqueue.entity_queue.home_furniture
+    - entityqueue.entity_queue.mobiles
     - node.type.content_admin_3_products
   module:
+    - entityqueue
     - node
 id: content_admin_2
 label: 'Content admin 2'
@@ -13,3 +17,6 @@ is_admin: null
 permissions:
   - 'create content_admin_3_products content'
   - 'edit own content_admin_3_products content'
+  - 'update fashion entityqueue'
+  - 'update home_furniture entityqueue'
+  - 'update mobiles entityqueue'

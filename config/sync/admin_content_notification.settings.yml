@@ -1,0 +1,30 @@
+_core:
+  default_config_hash: lqgpqHWPl_Pw9TRyZ9tqgNM1-ah9HMX3fwfU49_Ihck
+admin_content_notification_node_types:
+  content_admin_3_product: content_admin_3_product
+  content_admin_3_products: content_admin_3_products
+  products: products
+  article: null
+  page: null
+admin_content_notification_trigger_on_node_update: true
+admin_content_notification_trigger_on_node_status: 1
+admin_content_notification_allowed_roles:
+  administrator: administrator
+  content_admin_1: content_admin_1
+  content_admin_2: content_admin_2
+  content_admin_3: content_admin_3
+  anonymous: null
+  authenticated: null
+  content_editor: null
+admin_content_notification_email_limit: 50
+admin_content_notification_email: ''
+admin_content_notification_roles_notified:
+  administrator: administrator
+  authenticated: null
+  content_editor: null
+  content_admin_1: null
+  content_admin_2: null
+  content_admin_3: null
+admin_content_notification_email_subject: 'New Content @action'
+admin_content_notification_email_body: 'A new content has been @action on your site <br/> Submitted by : @user_who_posted <br/> New content link : @content_link'
+admin_content_notification_default_to: utkarsh.singh@innoraft.com
